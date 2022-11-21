@@ -1,0 +1,12 @@
+#Deriving the latest base image
+FROM python:latest
+
+EXPOSE 8080/tcp
+#Labels as key value pair
+LABEL Maintainer="jpavia@comcast.net"
+
+ENV SYMBOL=MSFT NDAYS=7
+
+WORKDIR /app
+COPY web.py ./
+CMD [ "python", "./web.py"]

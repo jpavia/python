@@ -5,9 +5,9 @@ Based on image at https://hub.docker.com/repository/docker/jpavia/python
 In order to run:
 
 1. enter bash shell
-2. run ./startup.sh in top directory of repo
+2. run "./startup.sh" in top directory of repo
 3. open new terminal
-4. run  kubectl port-forward service/rock 8080:8080
+4. run  "kubectl port-forward service/rock 8080:8080"
 5. browse to http://localhost:8080
 
 

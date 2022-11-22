@@ -6,6 +6,7 @@ import os
 
 # Get environment variables
 SYMBOL = os.getenv('SYMBOL')
+APIKEY = os.getenv('APIKEY')
 NDAYS = int(os.getenv('NDAYS'))
 
 print(f"NDAYS is {NDAYS} type {type(NDAYS)}")
@@ -16,11 +17,11 @@ serverPort = 8080
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         from urllib.request import urlopen
-        url = "https://www.alphavantage.co/query?apikey=C227WD9W3LUVKVV9&function=TIME_SERIES_DAILY_ADJUSTED&symbol="+SYMBOL
+        url = "https://www.alphavantage.co/query?apikey="+APIKEY+"function=TIME_SERIES_DAILY_ADJUSTED&symbol="+SYMBOL
         response = urlopen(url)
         stock = (json.loads(response.read()))
         stock=(stock['Time Series (Daily)'])
-        day=(stock["2022-11-18"])
+        #day=(stock["2022-11-18"])
         n=0
         sum=0.0
         cprice=[]

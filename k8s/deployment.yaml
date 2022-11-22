@@ -48,6 +48,11 @@ spec:
             configMapKeyRef:
               name: rock-config
               key: ndays
+        - name: APIKEY
+          valueFrom:
+            secretKeyRef:
+              name: rock-secret
+              key: api-key
         ports:
         - containerPort:  8080
           name:  rock

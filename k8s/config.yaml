@@ -4,5 +4,5 @@ metadata:
   name: rock-config
   namespace: default
 data:
-  symbol: MFST
+  symbol: MSFT
   ndays: "7"

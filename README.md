@@ -10,4 +10,12 @@ In order to run:
 4. run  "kubectl port-forward service/rock 8080:8080"
 5. browse to http://localhost:8080
 
+From Command Line
 
+1. kubectl apply -f k8s/deployment.yaml
+2. kubectl apply -f k8s/service.yaml
+3. kubectl apply -f k8s/config.yaml
+4. kubectl apply -f k8s/secret.yaml
+5. open new terminal
+6. run  "kubectl port-forward service/rock 8080:8080"
+7. browse to http://localhost:8080

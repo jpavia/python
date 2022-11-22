@@ -21,7 +21,6 @@ class MyServer(BaseHTTPRequestHandler):
         response = urlopen(url)
         stock = (json.loads(response.read()))
         stock=(stock['Time Series (Daily)'])
-        #day=(stock["2022-11-18"])
         n=0
         sum=0.0
         cprice=[]

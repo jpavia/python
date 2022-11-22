@@ -4,10 +4,6 @@ import sys
 import json
 import os
 
-# Set environment variables
-#os.environ['SYMBOL'] = 'MSFT'
-#os.environ['NDAYS'] = '7'
-
 # Get environment variables
 SYMBOL = os.getenv('SYMBOL')
 NDAYS = int(os.getenv('NDAYS'))

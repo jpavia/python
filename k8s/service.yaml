@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: rock
+  namespace: default
+  labels:
+    app: rock
+spec:
+  selector:
+    app: rock
+  type: ClusterIP
+  ports:
+  - name: rock
+    protocol: TCP
+    port: 8080 
+    targetPort: 8080 

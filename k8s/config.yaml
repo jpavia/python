@@ -4,5 +4,5 @@ metadata:
   name: rock-config
   namespace: default
 data:
-  symbol: TSLA
-  ndays: "10"
+  symbol: MFST
+  ndays: "7"

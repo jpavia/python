@@ -4,4 +4,4 @@
  kubectl apply -f k8s/service.yaml
  kubectl apply -f k8s/config.yaml
  sleep 10
- kubectl port-forward service/rock 8080:8080 &
+ #kubectl port-forward service/rock 8080:8080 &

@@ -9,5 +9,6 @@ In order to run:
 3. open new terminal
 4. run  "kubectl port-forward service/rock 8080:8080"
 5. browse to http://localhost:8080
+6. For Windows, enter the commands in startup.sh or convert to .bat
 
 
